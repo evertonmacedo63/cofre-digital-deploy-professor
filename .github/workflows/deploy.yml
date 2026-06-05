@@ -182,4 +182,6 @@ jobs:
       # O script interativo espera input humano.
       # Para rodar no Actions, enviamos a opção "6" automaticamente.
       - name: Executar interactive_tests.sh (modo automático)
-        run: bash tests/interactive_tests.sh <<< "6"
+      # run: bash tests/interactive_tests.sh <<< "6"
+        run: bash tests/interactive_tests_ci.sh
+
